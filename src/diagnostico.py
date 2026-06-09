@@ -1,10 +1,18 @@
-def diagnostico(dados):
+#melhorias de leitura 
+def diagnostico(dados, modulos):
     # Obtém os valores mais recentes de cada variável.
     # O índice [-1] representa o último elemento da lista.
 
     reserva = dados["reserva"][-1]           # Energia disponível (kWh)
     comunicacao = dados["comunicacao"][-1]   # Qualidade da comunicação (%)
     radiacao = dados["radiacao"][-1]         # Nível de radiação
+
+    #inconsistencia
+    if modulos["comunicacao"] == 0 and comunicacao > 80: 
+        print("INCONSISTÊNCIA DETECTADA: módulo de comunicação falhou, mas a qualidade da comunicação é alta.")
+
+    if modulos["comunicacao"] == 1 and comunicacao < 50:
+        print("INCONSISTÊNCIA DETECTADA: módulo de comunicação operacional, mas a qualidade da comunicação é baixa.")
 
     # Conversão dos valores para condições booleanas, tornando-as mais fáceis de usar em diagnósticos.
 

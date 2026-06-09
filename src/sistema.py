@@ -19,7 +19,7 @@ dados = carregar_dados("../data/dados.csv")
 
 # DIAGNÓSTICO DA MISSÃO
 
-status = diagnostico(dados)
+status = diagnostico(dados, modulos)
 
 # GERAÇÃO DE ALERTAS
 
