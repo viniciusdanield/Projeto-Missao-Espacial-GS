@@ -80,12 +80,13 @@ PREVISÃO ENERGÉTICA:
 Reserva prevista para o próximo ciclo: 501.67 kWh
 
 ## Como Executar
-
-```bash
+#Terminal powershell
 cd src
 python sistema.py
 
 ---
+
+```bash
 
 Integrantes
 Nome: ANA CAROLINA FREIRE MAFRA – rm573650
