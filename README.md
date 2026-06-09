@@ -81,8 +81,8 @@ Reserva prevista para o próximo ciclo: 501.67 kWh
 
 ## Como Executar
 #Terminal powershell
-cd src
-python sistema.py
+#cd src
+#python sistema.py
 
 ---
 
