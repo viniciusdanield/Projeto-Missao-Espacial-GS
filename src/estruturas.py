@@ -7,7 +7,7 @@ from collections import deque
 modulos = {
     "suporte_vida": 1,
     "energia": 1,
-    "comunicacao": 0,
+    "comunicacao": 1,
     "habitat": 1,
     "laboratorio": 1,
     "armazenamento": 1
