@@ -1,5 +1,8 @@
 import csv  # Importa a biblioteca para leitura de arquivos CSV
 
+def carregar_dados(caminho):
+    return ler_csv(caminho)
+
 def ler_csv(caminho):
     """
     Função responsável por ler um arquivo CSV contendo dados de telemetria
