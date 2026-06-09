@@ -68,6 +68,7 @@ print(status)
 # ALERTAS
 
 print("\nALERTAS GERADOS:")
+print(f"Total de alertas: {len(fila_alertas)}")
 
 if len(fila_alertas) == 0:
     print("Nenhum alerta encontrado.")
