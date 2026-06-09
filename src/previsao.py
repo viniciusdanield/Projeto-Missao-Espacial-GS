@@ -5,9 +5,9 @@ def previsao(dados):
     reserva = dados["reserva"]     # Energia armazenada (kWh)
 # Calcular a média movel utilizando os últimos 3 valores de consumo de energia
     media_consumo = (
-    consumo[-1] +  # Consumo mais recente
-    consumo[-2],  # Consumo anterior                        erro na sintaxe, isso virou uma tupla
-    consumo[-3]   # Consumo antes do anterior
+        consumo[-1]   # Consumo mais recente
+        + consumo[-2]  # Consumo anterior                        
+        + consumo[-3]   # Consumo antes do anterior
 ) / 3 # Dividir pela quantidade de valores para obter a média
 
 # Obtém os valores mais recentes
