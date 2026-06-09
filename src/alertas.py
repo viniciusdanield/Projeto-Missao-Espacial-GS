@@ -10,7 +10,7 @@ def gerar_alertas(dados):
 
 # ALERTAS DE ENERGIA
     if reserva < 500:
-        alertas.append("ALERTA: Reserva energética crítica!")
+        alertas.append("ALERTA CRÍTICO: Reserva energética crítica!")
     elif reserva < 520:
         alertas.append("AVISO: Reserva energética baixa.")
     elif reserva < 550:
@@ -20,7 +20,7 @@ def gerar_alertas(dados):
 
 # ALERTAS DE COMUNICAÇÃO
     if comunicacao < 40:
-        alertas.append("ALERTA: Comunicação crítica!")
+        alertas.append("ALERTA CRÍTICO: Comunicação crítica!")
     elif comunicacao < 50:
         alertas.append("AVISO: Comunicação ruim.")
     elif comunicacao < 70:
@@ -30,7 +30,7 @@ def gerar_alertas(dados):
 
 # ALERTAS DE RADIAÇÃO
     if radiacao > 8:
-        alertas.append("ALERTA: Radiação crítica!")
+        alertas.append("ALERTA CRÍTICO: Radiação crítica!")
     elif radiacao > 6:
         alertas.append("AVISO: Radiação alta.")
     elif radiacao > 4:
@@ -40,7 +40,7 @@ def gerar_alertas(dados):
 
 # ALERTAS DE TEMPERATURA
     if temperatura > 30:
-        alertas.append("ALERTA: Temperatura crítica!")
+        alertas.append("ALERTA CRÍTICO: Temperatura crítica!")
     elif temperatura > 28:
         alertas.append("AVISO: Temperatura alta.")
     elif temperatura > 26:
@@ -52,7 +52,7 @@ def gerar_alertas(dados):
     if reserva < 500 and comunicacao < 40 and radiacao > 8 and temperatura > 30:
         alertas.append("ALERTA CRÍTICO: Múltiplos sistemas em situação crítica!")
     elif reserva < 520 or comunicacao < 50 or radiacao > 6 or temperatura > 28:
-        alertas.append("ALERTA: Múltiplos sistemas com problemas detectados.")
+        alertas.append("ALERTA CRÍTICO: Múltiplos sistemas com problemas detectados.")
     elif reserva < 550 or comunicacao < 70 or radiacao > 4 or temperatura > 26:
         alertas.append("AVISO: Múltiplos sistemas abaixo do ideal.")
     else: 
