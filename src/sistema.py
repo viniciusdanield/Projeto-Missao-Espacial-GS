@@ -25,10 +25,32 @@ status = diagnostico(dados, modulos)
 
 alertas = gerar_alertas(dados)
 
-# Adiciona os alertas na fila
+# Criando prioridade nas filas 
+criticos = []
+alertas_medios = []
+atencoes = []
+normais = []
 
-for alerta in alertas:
+for alerta in alertas: 
+    if "CRÍTICO" in alerta:
+        criticos.append(alerta)
+    elif "ALERTA" in alerta:
+        alertas_medios.append(alerta)
+    elif "ATENÇÃO" in alerta:
+        atencoes.append(alerta)
+    else:
+        normais.append(alerta)
+
+# Organizando os alertas na fila de acordo com a prioridade
+for alerta in criticos:
     fila_alertas.append(alerta)
+for alerta in alertas_medios:
+    fila_alertas.append(alerta)
+for alerta in atencoes:
+    fila_alertas.append(alerta)
+for alerta in normais:
+    fila_alertas.append(alerta)
+
 
 # PREVISÃO DE ENERGIA
 
