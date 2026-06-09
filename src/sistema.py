@@ -2,7 +2,7 @@
 
 # Importação dos módulos do projeto
 
-from leitordados import carregar_dados
+from leitordados import carregar_dados #função não está sendo chamada 
 from diagnostico import diagnostico
 from previsao import previsao
 from alertas import gerar_alertas
